@@ -1,0 +1,20 @@
+.icons:hover {
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: lightblue;
+
+}
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  margin-right: 8px;
+  
+  
+}
+

@@ -1,5 +1,6 @@
 
-import { IoSearch } from "react-icons/io5";
+import PropTypes from 'prop-types';
+import { IoSearch } from 'react-icons/io5';
 
 function Search({ onSearch }) {
   return (
@@ -10,7 +11,7 @@ function Search({ onSearch }) {
           type="search"
           name="search"
           id="search"
-          aria-label="escriba su búsqueda"
+          aria-label="Escriba su búsqueda"
           placeholder="Buscar..."
           onChange={(e) => onSearch(e.target.value)}
         />
@@ -18,5 +19,9 @@ function Search({ onSearch }) {
     </form>
   );
 }
+
+Search.propTypes = {
+  onSearch: PropTypes.func.isRequired,
+};
 
 export default Search;

@@ -14,7 +14,7 @@ function getTasksFromStorage() {
 function App() {
   const [tasks, setTasks] = useState(getTasksFromStorage());
   const [filteredTasks, setFilteredTasks] = useState(tasks);
-  const [searchQuery, setSearchQuery] = useState("");
+  
 
   // Función para agregar una nueva tarea
   const handleAddTask = (description) => {
@@ -52,7 +52,7 @@ function App() {
 
   // Función para manejar la búsqueda
   const handleSearchQuery = (query) => {
-    setSearchQuery(query);
+    
     const queryResult = tasks.filter(t => t.description.toLowerCase().includes(query.toLowerCase()));
     setFilteredTasks(queryResult);
   };
